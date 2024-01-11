@@ -1,0 +1,219 @@
+{
+    "question": "Which is the correct operator for power(x^y)?",
+    "options": [
+        "X^y",
+        "X**y",
+        "X^^y",
+        "None of the mentioned"
+    ],
+    "correct_answer": "option2"
+}
+$
+	{
+    "question": "What is the maximum possible length of an identifier?",
+    "options": [
+        "31 characters",
+        "310 characters",
+        "255 characters",
+        "None of the mentioned"
+    ],
+    "correct_answer": "option4"
+}
+$
+	{
+    "question": "Which of the following is a correctly defined lambda?",
+    "options": [
+        "def lambda(x, y):",
+        "lambda x, y : x + y",
+        "lambda(x, y)",
+        "lambda x + y : x, y"
+    ],
+    "correct_answer": "option2"
+}
+$
+	{
+    "question": "What will be the output of the following Python code? l=[1, 0, 2, 0, 'hello', '', []] list(filter(bool, l))",
+    "options": [
+        "[1, 0, 2, ‘hello’, ”, []]",
+        "Error",
+        "[1, 2, ‘hello’]",
+        "[1, 0, 2, 0, ‘hello’, ”, []]"
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "The following python program can work with ____ parameters.",
+    "options": [
+        "any number of",
+        "0",
+        "1",
+        "1"
+    ],
+    "correct_answer": "option1"
+}
+$
+	{
+    "question": "What is the order of namespaces in which Python looks for an identifier?",
+    "options": [
+        "Python first searches the built-in namespace, then the global namespace and finally the local namespace",
+        "Python first searches the built-in namespace, then the local namespace and finally the global namespace",
+        "Python first searches the local namespace, then the global namespace and finally the built-in namespace",
+        "Python first searches the global namespace, then the local namespace and finally the built-in namespace"
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Which function is called when the following Python program is executed?\nf = foo()\nformat(f)",
+    "options": [
+        "str()",
+        "format()",
+        "__str__()",
+        "_format__()"
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Which among them will produce {'a', 'b', 'c'}?",
+    "options": [
+        "Tuple(\"abc\")",
+        "Set(\"abc\")",
+        "List(\"abc\")",
+        "None of the above"
+    ],
+    "correct_answer": "option4"
+}
+$
+	{
+    "question": "Suppose you are given a set (s1={1,2,3}). What is the output for the code − 2 * s1?",
+    "options": [
+        "(1,1,2,2,3,3)",
+        "[1,1,2,2,3,3]",
+        "Illegal",
+        "(1,2,3,1,2,3)"
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Syntax error in python is detected by _________ at _______",
+    "options": [
+        "compiler/ compiler time",
+        "interpreter/ run time",
+        "compiler/ run time",
+        "interpreter/ compile time"
+    ],
+    "correct_answer": "option2"
+}
+$
+	{
+    "question": "What is the output for 'you are doing well' [2:999]?",
+    "options": [
+        "'you are doing well'",
+        "' '",
+        "Index error",
+        "'u are doing well'"
+    ],
+    "correct_answer": "option4"
+}
+$
+	{
+    "question": "How can we generate random numbers in python using methods?",
+    "options": [
+        "random.uniform ()",
+        "random.randint()",
+        "random.random()",
+        "All of the above"
+    ],
+    "correct_answer": "option4"
+}
+$
+	{
+    "question": "Which function can be used on the file to display a dialog for saving a file?",
+    "options": [
+        "Filename = savefilename()",
+        "Filename = asksavefilename()",
+        "Filename = asksaveasfilename()",
+        "No such option in python."
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Pylab is a package that combines _______,________&______ into a single namespace.",
+    "options": [
+        "Numpy, scipy & matplotlib",
+        "Numpy, matplotlib & pandas",
+        "Numpy, pandas & matplotlib",
+        "Numpy, scipy & pandas"
+    ],
+    "correct_answer": "option1"
+}
+$
+	{
+    "question": "What happens in the below code?\nclass A:\n  def __init__(self, i=100):\n    self.i=i\n\nclass B(A):\n  def __init__(self,j=0):\n    self.j=j\n\ndef main():\n  b= B()\n  print(b.i)\n  print(b.j)\n\nmain()",
+    "options": [
+        "Class B inherits all the data fields of class A.",
+        "Class B needs an Argument.",
+        "The data field ‘j' cannot be accessed by object b.",
+        "Class B is inheriting class A but the data field ‘i' in A cannot be inherited."
+    ],
+    "correct_answer": "option4"
+}
+$
+	{
+    "question": "What is output of following −\nprint('any'.encode())",
+    "options": [
+        "‘any'",
+        "‘yan'",
+        "b'any'",
+        "x'any'"
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Suppose we have a set a = {10,9,8,7} and we execute a.remove(14) what will happen ?",
+    "options": [
+        "We cannot remove an element from set.",
+        "Method is executed but no exception is raised.",
+        "Key error is raised.",
+        "There doesn't exist such method as remove."
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Suppose we have a set a = {10,9,8,7} and we execute a.remove(14) what will happen ?",
+    "options": [
+        "We cannot remove an element from set.",
+        "Method is executed but no exception is raised.",
+        "Key error is raised.",
+        "There doesn't exist such method as remove."
+    ],
+    "correct_answer": "option3"
+}
+$
+	{
+    "question": "Which of the following precedence order is correct in Python?",
+    "options": [
+        "Parentheses, Exponential, Multiplication, Division, Addition, Subtraction",
+        "Multiplication, Division, Addition, Subtraction, Parentheses, Exponential",
+        "Division, Multiplication, Addition, Subtraction, Parentheses, Exponential",
+        "Exponential, Parentheses, Multiplication, Division, Addition, Subtraction"
+    ],
+    "correct_answer": "option1"
+}
+$
+	{
+    "question": "Why does the name of local variables start with an underscore discouraged?",
+    "options": [
+        "To identify the variable",
+        "It confuses the interpreter",
+        "It indicates a private variable of a class",
+        "None of these"
+    ],
+    "correct_answer": "option3"
+}

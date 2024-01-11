@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Track (the area behind the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: black;
+  }
+  
+/* Navbar Styles */
+.heading
+{
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar .image img {
+    height: 40px;
+}
+
+.nav-bar .heading {
+    margin: 0 auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar-list li {
+    display: flex;
+    margin-right: 15px;
+}
+
+.nav-bar-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.main {
+    margin-top:40px;
+    margin-left:60px;
+    top: 60px;
+    width: calc(100% - 260px);
+    min-height: calc(100vh - 60px);
+    left: 260px;
+    background: #f5f5f5;
+}
+
+.cards {
+    width: 100%;
+    padding: 35px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.cards .card {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+}
+
+.number {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.card-name {
+    font-weight: 600;
+}
+
+.icon-box i {
+    font-size: 45px;
+}
+
+.unattempted-icon {
+    color: grey; /* Change color as needed */
+}
+
+.attempted-icon {
+    color: orange; /* Change color as needed */
+}
+
+.wrong-icon {
+    color: red; /* Change color as needed */
+}
+
+.correct-icon {
+    color: green; /* Change color as needed */
+}
+
+#result
+{
+    width:300px;
+    height:300px;
+}

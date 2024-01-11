@@ -1,0 +1,217 @@
+{
+		"question": "Inserting an item into the stack when the stack is not full is called…….. Operation and deletion of an item from the stack, when the stack is not empty is called ...........operation.",
+		"options" : [
+				"push, pop",
+				"pop, push",
+				"insert, delete",
+				"delete, insert"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "The Worst case occurs in linear search algorithm when",
+		"options" : [
+				"Item is somewhere in the middle of the array",
+				"Item is not in the array at all",
+				"Item is the last element in the array",
+				"Item is the last element in the array or is not there at all."
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "Within a switch statement, you can use—",
+		"options" : [
+				"Continue but not break",
+				"Break but not continue",
+				"Both continue and break",
+				"Neither continue nor break"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "Which operator is used to invert all the digits in a binary representation of a number?",
+		"options" : [
+				"~",
+				"<<<",
+				">>>",
+				"^"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "The Default Parameter passing mechanism is",
+		"options" : [
+				"Call by value",
+				"Call by reference",
+				"Call by value result",
+				"None of the above"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+	"question": "What is the output of this C code? #include <stdio.h>\nint main() {\n\tint y = 2;\n\tint z = y + (y = 10);\n\tprintf(\"%d\", z);\n}",
+	"options": [
+		"2",
+		"4",
+		"20",
+		"Compile time error"
+	],
+	"correct_answer": "option3"
+}
+$
+	{
+		"question": "What happens if the base condition is not defined in recursion? ",
+		"options" : [
+				"Stack Underflow",
+				"Stack Overflow",
+				"None of these",
+				"Both a and b"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "Which one of the below is not divide and conquer approach?",
+		"options" : [
+				"Insertion sort",
+				"Merge sort",
+				"Shell sort",
+				"Heap sort"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "What data structure can be used to check if a syntax has balanced paranthesis ?",
+		"options" : [
+				"queue",
+				"tree",
+				"list",
+				"stack"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "Minimum number of queues required for priority queue implementation?",
+		"options" : [
+				"5",
+				"4",
+				"3",
+				"2"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "Visiting root node after visiting left and right sub-trees is called",
+		"options" : [
+				"In-orsder traversal",
+				"Pre-order traversal",
+				"Post-order traversal",
+				"None of the above"
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "Which method can find if two vertices x & y have path between them?",
+		"options" : [
+				"Depth first search",
+				"Breadth first search",
+				"Both A & B",
+				"None of the above"
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "In context with time-complexity, find the odd out −",
+		"options" : [
+				"Deletion from linked list",
+				"Searching in hash table",
+				"Adding edge in adjacency matrix",
+				"Heapify a binary heap"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "If queue is implemented using arrays, what would be the worst run time complexity of queue and dequeue operations?",
+		"options" : [
+				"O(n),O(n)",
+				"O(n),O(1)",
+				"O(1),O(n)",
+				"O(1),O(1)"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "A stable sorting alrithm −",
+		"options" : [
+				"Does not crash",
+				"Does not run out of memory",
+				"Does not change the sequencies of apperance of elements",
+				"Does not exist"
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "Which of the following is an example of dynamic programming approach?",
+		"options" : [
+				"Fibonnaci series",
+				"Tower of hanoi",
+				"Dijkstra shortest path",
+				"All of the above"
+		],
+		"correct_answer":"option4"
+	}$
+
+	{
+	"question": "The program fragment— int a=5, b=2; print(a++*++b);",
+	"options": [
+		"Prints 15",
+		"Prints 10",
+		"Prints 18",
+		"None of these."
+	],
+	"correct_answer": "option1"
+}
+$
+
+	{
+		"question": "If the data collection is in sorted form and equally distributed then the run time complexity of interpolation search is −",
+		"options" : [
+				"O(n)",
+				"O(1)",
+				"O(log n)",
+				"O(log (log n))"
+		],
+		"correct_answer":"option4"
+	}$
+
+	{
+		"question": "Project scheduling is an example of",
+		"options" : [
+				"Greedy Algorithm",
+				"Dynamic programing",
+				"Divide and concquer",
+				"None of the above"
+		],
+		"correct_answer":"option2"
+	}$
+
+	{
+		"question": "Which of the following algorithm is not stable?",
+		"options" : [
+				"Bubble sort",
+				"Quick sort",
+				"Merge sort",
+				"Insersion sort"
+		],
+		"correct_answer":"option2"
+	}$
+
+	{
+	"question": "A queue data-structure can be used for −",
+	"options": [
+		"Expression parsing",
+		"Recursion",
+		"Resource allocation",
+		"All of the above"
+	],
+	"correct_answer": "option3"
+}

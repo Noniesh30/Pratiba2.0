@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ECM Pratibha</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/pratibha_logo-transformed.png') }}">  
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<style>
+    /* Basic styles for the layout */
+body {
+  margin: 0;
+  font-family: Consolas, monospace;
+  background: linear-gradient(to right, rgb(43, 119, 206), rgb(62, 205, 205)); 
+  color:white
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: left;
+  padding: 0;
+  margin-left:70px
+}
+
+nav ul li {
+  margin:10px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  margin-left:20px;
+}
+
+/* Styling the hover animation */
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.4s ease-in-out, left 0.4s ease-in-out;
+}
+
+nav ul li a:hover::before {
+  width: calc(100% - 10px); /* Adjust as needed based on your design */
+  left: 10px; /* Adjust for padding or margins */
+}
+
+.main-content {
+  flex-grow: 1;
+  /* Blue background with cyan shade on the right */
+  margin-top:100px;
+  
+}
+
+.join-now-button {
+  /* Button styles */
+  font-family: Consolas, monospace;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 10px;
+}
+
+
+.card-container {
+  color: white;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px); /* Adjust width of each column */
+  grid-column-gap: 150px; /* Adjust the gap between columns */
+  justify-content: flex-start; /* Align content to the start (left) */
+  margin-left: 70px; /* Adjust the left margin */
+}
+
+
+
+
+.card {
+  width: 300px; /* Adjust the width and margins */
+  margin: 10px;
+  border: 4px solid #ccc;
+  background-color: black;
+  color:white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.description {
+  margin-bottom: 15px;
+}
+
+.link {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Adding transition for color and border */
+}
+
+.link:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid white; /* Border on hover */
+}
+
+
+
+.icon {
+  font-size: 50px; /* Adjust the size of the icon */
+  margin:20px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+  /* Track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+background: #16c2d8;
+}
+
+  /* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: #1fa0d7;
+    border-radius: 6px;
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7aaabe;
+}
+
+.hi 
+{
+  margin-left:150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+</style>
+<body>
+    <div class="main-icon"> <!-- Leftmost part for icon -->
+      <!-- Your icon goes here -->
+    </div>
+    <nav>
+      <ul style="font-size: 18px;">
+        <li><a href="/">Home</a></li>
+        <li><a href="/course">Courses</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+      <form action="/login" method="get">
+        <button class="join-now-button" type="submit">Join Now</button> 
+    </form>
+     
+    </nav>
+    <div class="main-content" style="font-size: 30px;">
+      <h1 class="hi">Hi {{Username}}</h1>
+        <div class="card-container">
+            <div class="card">
+              <div class="icon">
+                <!-- Python icon (you can use an <img> tag or an icon library) -->
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="description">
+                <h3>Python</h3>
+                <h5>Embrace Python for its simplicity, readability, and wide applicability in web development, data analysis, AI, and more.</h5>
+              </div>
+              <br>
+              <form action="/button_python" method="post">
+                <button type="submit" class="link">View Course</button>
+            </form>
+            </div>
+            <div class="card">
+                <div class="icon">
+                  <!-- Python icon (you can use an <img> tag or an icon library) -->
+                  <span>C</span>
+                </div>
+                <div class="description">
+                  <h3>C programming Language</h3>
+                  <h5>Learn C for its efficiency and foundational knowledge in systems programming and low-level operations.</h5>
+                </div>
+                <br>
+                <form action="/button_c" method="post">
+                  <button type="submit" class="link">View Course</button>
+              </form>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <!-- Python icon (you can use an <img> tag or an icon library) -->
+                  <span>C++</span>
+                </div>
+                <div class="description">
+                  <h3>C++ programming Language</h3>
+                  <h5>Master C++ to leverage object-oriented programming and create robust, high-performance applications.</h5>
+                </div>
+                <br>
+                <form action="/button_c_plus" method="post">
+                  <button type="submit" class="link">View Course</button>
+              </form>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="fab fa-java"></i>
+                </div>
+                <div class="description">
+                  <h3>Java</h3>
+                  <h5>Embrace Java for its platform independence and versatility across web, mobile, and enterprise applications.</h5>
+                </div>
+                <br>
+                <br>
+                <form action="/button_java" method="post">
+                  <button type="submit" class="link">View Course</button>
+              </form>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="fas fa-sitemap"></i> 
+                </div>
+                <div class="description">
+                  <h3>Data structure and Algorithms</h3>
+                  <h5>Acquire knowledge in data structures and algorithms for efficient problem-solving and code optimization.</h5>
+                </div>
+                <br>
+                <form action="/button_ds" method="post">
+                  <button type="submit" class="link">View Course</button>
+              </form>
+              </div>
+              <div class="card">
+                <div class="icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="description">
+                  <h3>SQL</h3>
+                  <h5>Grasp SQL for effective database management, enabling data manipulation and retrieval.</h5>
+                </div>
+                <br>
+                <br>
+                <br>
+                <form action="/button_sql" method="post">
+                  <button type="submit" class="link">View Course</button>
+              </form>
+              </div>
+        </div>
+      <!-- Button with black color -->
+    </div>
+</body>
+</html>

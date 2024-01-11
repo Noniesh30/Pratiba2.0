@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECM Pratibha</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/pratibha_logo-transformed.png') }}">    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="image">
+            <img src="{{url_for('static',filename='images/pratibha_logo-transformed.png')}}" alt="" srcset="">
+        </div>
+        <div class="heading">
+            <h1>ECM PRATHIBA</h1>
+        </div>
+        <div >
+            <ul class="nav-bar-list">
+                <li class="nav-bar-item"><a href="/"  class="link">Home</a></li>
+                <li class="nav-bar-item"><a href="/course" class="link">Course</a></li>
+                <li class="nav-bar-item"><a href="#" class="link">About</a></li>
+                <li class="nav-bar-item"><a href="/login" class="link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="cards">
+            <div class="card">
+                <div class="card-content" style="color:green">
+                    <div class="number">{{ show[0]}}</div>
+                    <div class="card-name">Correct</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-check-circle correct-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="color:red">
+                    <div class="number">{{ show[1] }}</div>
+                    <div class="card-name">Wrong</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-times-circle wrong-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="color:orange">
+                    <div class="number">{{ show[2]}}</div>
+                    <div class="card-name">Attepted</div>
+                </div>
+                <div class="icon-box">
+                    <i class="fas fa-check-circle attempted-icon"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="color:grey">
+                    <div class="number">{{ show[3] }}</div>
+                    <div class="card-name">Unattempted</div>
+                </div>
+                <div class="icon-box">
+                    <i class="far fa-circle unattempted-icon"></i>
+                </div>
+            </div>
+        </div>
+        <div class="charts">
+            <div class="chart doughnut-chart">
+                <h2>Statistics</h2>
+                <div>
+                    <canvas id="doughnut"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+<script>
+    fetch('/give_data')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); // You'll see the list of numbers in the console
+            var ctx2 = document.getElementById('doughnut').getContext('2d');
+            var myChart2 = new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ['Right', 'Wrong', 'Attempted', 'Unattempted'],
+                datasets: [{
+                    label: 'Employees',
+                    data:  data,
+                    backgroundColor: [
+                'green',
+                'red',
+                'orange',
+                'grey'
+
+            ],
+            borderColor: [
+                'green',
+                'red',
+                'orange',
+                'grey'
+
+            ],
+                    borderWidth: 1
+                }]
+
+            },
+            options: {
+        responsive: true,
+        maintainAspectRatio: false, // Set to false to allow control over aspectRatio
+        aspectRatio: 0.5, // Adjust this value to change the size of the chart
+    }
+        });
+            
+        })
+
+</script>
+</body>
+</html>

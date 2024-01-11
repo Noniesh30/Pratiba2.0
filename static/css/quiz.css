@@ -1,0 +1,102 @@
+/* quiz.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Navbar Styles */
+.heading
+{
+    align-items: center;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.nav-bar .image img {
+    height: 40px;
+}
+
+.nav-bar .heading {
+    margin: 0 auto;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-bar-list li {
+    display: flex;
+    margin-right: 15px;
+}
+
+.nav-bar-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Quiz Styles */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.question {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+label {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    width:150px;
+}
+
+
+.timer
+{
+    margin-left:20px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+  /* Track (the area behind the scrollbar) */
+::-webkit-scrollbar-track {
+background: white;
+}
+
+  /* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 6px;
+}
+

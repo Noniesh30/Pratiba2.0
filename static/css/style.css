@@ -1,0 +1,149 @@
+/* image-grid.css */
+.img-item {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(2, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Adjust the gap between grid items */
+}
+
+.row {
+    /* Maintain aspect ratio for each item */
+    width: auto; /* Ensure all items occupy full width of the grid column */
+}
+
+/* scrollbar.css */
+
+/* Width and height of the scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  
+  /* Track (the area behind the scrollbar) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #1fa0d7;
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #51beed;
+  }
+  
+
+
+*
+{
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.link{
+    text-decoration: none;
+    color: #fff;
+}
+.link:hover{
+    color: blue;
+}
+.nav-bar
+{
+    background-color: rgb(1, 225, 255);
+    height: 120px;
+    width: auto;
+    display: flex;
+}
+.image{
+    padding: 20px;
+}
+.heading
+{
+    margin: 40px ;
+}
+h1{
+    font-size: 40px;
+}
+img{
+    width: 120px;
+}
+.nav-bar-list
+{
+    display: flex;
+    margin: 50px;
+}
+.nav-bar-item
+{
+    margin: 0px 50px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.content
+{
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+.content h1{
+    font-size: 50px;
+}
+.content p{
+   font-weight: 600;
+   padding: 10px;
+   font-size: 20px;
+}
+.row
+{
+    display: flex;
+    padding:30px ;
+    margin: 40px;
+}
+.course-image
+{
+    width: 350px;
+
+}
+.row{
+    gap: 30px;
+}
+.course-content
+{
+    text-align: center;
+    margin: 20px;
+}
+button
+{
+    font-size: 18px;
+    background-color: rgb(1, 225, 255);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 18px;
+}
+.form
+{
+    background-color: rgb(175, 175, 175);
+    margin: 30px 390px 0px;
+    text-align: center;
+    font-size: 18px;
+    padding: 50px;
+    border-radius: 20px;
+}
+.submit
+{
+    font-size: 15px;
+    background-color: rgb(1, 225, 255);
+    border: none;
+    color: #fff;
+    margin: 20px;
+    padding: 6px;
+    width: 90px;
+}
+input{
+    margin: 0px 10px;
+    width: 170px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ECM Pratibha</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/pratibha_logo-transformed.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/quiz.css') }}">
+</head>
+<body>
+
+    <nav class="nav-bar">
+        <div class="image">
+            <img src="{{url_for('static',filename='images/pratibha_logo-transformed.png')}}" alt="" srcset="">
+        </div>
+        <div id="timer" class="timer">
+            <b>Time Left: <span id="countdown">5:00</span></b>
+        </div>
+        <div class="heading">
+            <h1>ECM PRATHIBA</h1>
+        </div>
+        <div >
+            <ul class="nav-bar-list">
+                <li class="nav-bar-item"><a href="/"  class="link">Home</a></li>
+                <li class="nav-bar-item"><a href="/course" class="link">Course</a></li>
+                <li class="nav-bar-item"><a href="#" class="link">About</a></li>
+                <li class="nav-bar-item"><a href="/login" class="link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <h1>Quiz Questions for {{Subject}}</h1>
+    <form action="/submit" method="post">
+        {% for question in questions %}
+        <div class="question">
+            <b><p>{{ question['question'] }}</p></b>
+            <input type="radio" id="option1_{{ loop.index }}" name="answer_{{ loop.index }}" value="option1">
+            <label for="option1_{{ loop.index }}">{{ question['options'][0] }}</label><br>
+        
+            <input type="radio" id="option2_{{ loop.index }}" name="answer_{{ loop.index }}" value="option2">
+            <label for="option2_{{ loop.index }}">{{ question['options'][1] }}</label><br>
+        
+            <input type="radio" id="option3_{{ loop.index }}" name="answer_{{ loop.index }}" value="option3">
+            <label for="option3_{{ loop.index }}">{{ question['options'][2] }}</label><br>
+
+            <input type="radio" id="option4_{{ loop.index }}" name="answer_{{ loop.index }}" value="option4">
+            <label for="option4_{{ loop.index }}">{{ question['options'][3] }}</label><br>
+        </div>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        let timeLeft = 5 * 60; // 5 minutes in seconds
+        const countdownElement = document.getElementById('countdown');
+
+        function countdown() {
+            const minutes = Math.floor(timeLeft / 60);
+            let seconds = timeLeft % 60;
+
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            countdownElement.textContent = `${minutes}:${seconds}`;
+
+            if (timeLeft === 0) {
+                // When time finishes, submit the form
+                document.forms[0].submit(); // Submit the first form on the page
+            } else {
+                timeLeft--;
+                setTimeout(countdown, 1000);
+            }
+        }
+
+        // Start the countdown when the page loads
+        countdown();
+    </script>
+</body>
+</html>

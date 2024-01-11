@@ -1,0 +1,173 @@
+    
+	{
+		"question": "The address stored in the pointer variable is of type?",
+		"options" : [
+				"int",
+				"float",
+				"array",
+				"string"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "The operators . , !! , < , = if arranged in ascending order of precedence reads?",
+		"options" : [
+				".,!!,<,=",
+				"=,<,!!,.",
+				"=,!!,<,.",
+				"<,!!,=,."
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "Char *s[10] defines an array of ___________",
+		"options" : [
+				"None",
+				"String to pointer",
+				"Pointer to string",
+				"Both pointers to strings and strings to pointers"
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "Which header file should be included to use functions like malloc() and calloc()?",
+		"options" : [
+				"Dos.h",
+				"Alloc.h",
+				"Stdlib.h",
+				"Memory.h"
+		],
+		"correct_answer":"option3"
+	}$
+	{
+		"question": "What gets printed? printf(\"%d\",4 ?:8);",
+		"options" : [
+				"8",
+				"4",
+				"Null",
+				"Compiler error"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "Which keyword is used for coming out of recursion?",
+		"options" : [
+				"Break",
+				"Return",
+				"Exit",
+				"All the above"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": " How many tokens are there in the following?       if(csi==100);",
+		"options" : [
+				"6",
+				"7",
+				"5",
+				"4"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "C programming:the given expression P-=Q+1 is same as",
+		"options" : [
+				"P=P-Q-1",
+				"P=P-Q+1",
+				"P=-P+Q+1",
+				"None"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "A pointer is a C which has not been initialized is know as:",
+		"options" : [
+				"Far pointer",
+				"Void pointer",
+				"Null pointer",
+				"Wild pointer"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+		"question": "Which of the following does not represent a valid storage class in C?",
+		"options" : [
+				"Static",
+				"Union",
+				"Extern",
+				"Automatic"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "When fopen() is not able to open a file, then it returns",
+		"options" : [
+				"Complier dependent",
+				"Run time error",
+				"EOF",
+				"Null"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "How will you free the allocated memory?",
+		"options" : [
+				"Delete(var-name);",
+				"Free(var-name);",
+				"Remove(var-name);",
+				"Dealloc(var-name);"
+		],
+		"correct_answer":"option2"
+	}$
+	{
+		"question": "What will be x in the following c code? #include void main() {  int x; }",
+		"options" : [
+				"Integer variable",
+				"Static variable",
+				"Registered variable",
+				"Global variable"
+		],
+		"correct_answer":"option1"
+	}$
+	{
+		"question": "Which of the following cannot be static in C?",
+		"options" : [
+				"Variables",
+				"Structures",
+				"Functions",
+				"None"
+		],
+		"correct_answer":"option4"
+	}$
+	{
+	"question": "What is the output of the following?   #include int main() { char ch; if(ch = printf(\"\") printf(\"It matters\"); else printf(\"It doesn't matter\"); return 0; }",
+	"options": [
+		"It matters",
+		"It doesn't matter",
+		"Run time error",
+		"Nothing"
+	],
+	"correct_answer": "option2"
+    }
+	$
+	{
+	"question": "What is the output of the following?   #include int main() { char ch; if(ch = printf(\"\") printf(\"It matters\"); else printf(\"It doesn't matter\"); return 0; }",
+	"options": [
+		"It matters",
+		"It doesn't matter",
+		"Run time error",
+		"Nothing"
+	],
+	"correct_answer": "option2"
+}
+$
+	{
+		"question": "Which of the following is not a standard C Library?",
+		"options" : [
+				"Errno.h",
+				"Setjmp.h",
+				"Signal.h",
+				"Retarg.h"
+		],
+		"correct_answer":"option4"
+	}
