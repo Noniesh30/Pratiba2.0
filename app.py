@@ -132,7 +132,7 @@ def sign_up():
 @app.route('/button_c', methods=['POST'])
 def button_c():
     print("Button Pressed for c!")
-    question,ans=quiz.extract_questions('questions\c.txt')
+    question,ans=quiz.extract_questions(r'questions\c.txt')
     global subject
     subject='C'
     global answer
@@ -142,7 +142,7 @@ def button_c():
 @app.route('/button_java', methods=['POST'])
 def button_java():
     print("Button Pressed for java!")
-    question,ans=quiz.extract_questions('questions\java.txt')
+    question,ans=quiz.extract_questions(r'questions\java.txt')
     global subject
     subject='Java'
     global answer
@@ -152,7 +152,7 @@ def button_java():
 @app.route('/button_c_plus', methods=['POST'])
 def button_c_plus():
     print("Button Pressed for c++!")
-    question,ans=quiz.extract_questions('questions\c++.txt')
+    question,ans=quiz.extract_questions(r'questions\c++.txt')
     global subject
     subject='C++'
     global answer
@@ -162,7 +162,7 @@ def button_c_plus():
 @app.route('/button_ds', methods=['POST'])
 def button_ds():
     print("Button Pressed for ds!")
-    question,ans=quiz.extract_questions('questions\dsa.txt')
+    question,ans=quiz.extract_questions(r'questions\dsa.txt')
     global subject
     subject='Datastructures'
     global answer
@@ -172,7 +172,7 @@ def button_ds():
 @app.route('/button_sql', methods=['POST'])
 def button_sql():
     print("Button Pressed for sql!")
-    question,ans=quiz.extract_questions('questions\sql.txt')
+    question,ans=quiz.extract_questions(r'questions\sql.txt')
     global subject
     subject='SQL'
     global answer
@@ -182,7 +182,7 @@ def button_sql():
 @app.route('/button_python', methods=['POST'])
 def button_python():
     print("Button Pressed for python!")
-    question,ans=quiz.extract_questions('questions\python.txt')
+    question,ans=quiz.extract_questions(r'questions\python.txt')
     global subject
     subject='Python'
     global answer
