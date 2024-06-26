@@ -1,0 +1,36 @@
+[
+    {
+        "username": "noni",
+        "password": "1234",
+        "email": "cs21b2032@iiitdm.ac.in",
+        "test": [
+            {
+                "data": [
+                    5,
+                    5,
+                    10,
+                    0
+                ],
+                "subject": "Datastructures"
+            },
+            {
+                "data": [
+                    3,
+                    7,
+                    10,
+                    0
+                ],
+                "subject": "C++"
+            },
+            {
+                "data": [
+                    2,
+                    8,
+                    10,
+                    0
+                ],
+                "subject": "Python"
+            }
+        ]
+    }
+]

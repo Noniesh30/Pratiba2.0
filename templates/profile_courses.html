@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/pratibha_logo-transformed.png') }}">
+</head>
+<body>
+    <header>
+        <div class="logo" title="University Management System">
+            <h2>E<span class="danger">C</span>M</h2>
+            <h2>Pathibha</h2>
+        </div>
+        <div class="navbar">
+            <a href="/profile">
+                <span class="material-icons-sharp">home</span>
+                <h3>Home</h3>
+            </a>
+            <a href="/my_course">
+                <span class="material-icons-sharp">today</span>
+                <h3>Courses</h3>
+            </a> 
+            <a href="/result">
+                <span class="material-icons-sharp">grid_view</span>
+                <h3>Results</h3>
+            </a>
+            <a href="/logout">
+                <span class="material-icons-sharp" onclick="">logout</span>
+                <h3>Logout</h3>
+            </a>
+        </div>
+        <div id="profile-btn">
+            <span class="material-icons-sharp">person</span>
+        </div>
+        <div class="theme-toggler">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+        
+    </header>
+    <div class="container">
+        <aside>
+            <div class="profile">
+                <div class="top">
+                    <div class="profile-photo">
+                        <img src="{{url_for('static',filename='images/user.png')}}" alt="" srcset="">
+                    </div>
+                    <div class="info">
+                        <p>Hey, <b>{{name}}</b> </p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Courses</h1>
+            <div class="subjects_1">
+                <div class="eg">
+                    <span class="material-icons-sharp" color="red">android</span>
+                    <h2>Java</h2>
+                    <br>
+                    <h3>Java is widely used in various domains, including web development, where it powers dynamic websites and applications using frameworks like Spring. It's essential for mobile application development, especially for Android, leveraging its robustness and scalability.</h3>
+                    <form action="/button_java" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+                </div>
+                <div class="mth">
+                    <span class="material-icons-sharp">games</span>
+                    <h2>C++</h2>
+                    <br>
+                    <h3>C++, a powerful and versatile programming language, is prized for its ability to balance efficiency with a rich set of features. This makes it a popular choice for a wide range of applications. From creating high-performance games to developing complex operating systems, C++ is a cornerstone of various domains  including game development, systems programming, and embedded systems development.</h3>
+                    <form action="/button_c_plus" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+
+                </div>
+                <div class="cs">
+                    <span class="material-icons-sharp">computer</span>
+                    <h2>Data Structures and Algorithms</h2>
+                    <br>
+                    <h3>Data structures and algorithms are the software world's tools. Data structures organize information efficiently, like filing cabinets for your computer's memory. Algorithms are step-by-step instructions, using those structures to solve problems. Together they handle everything from social media feeds (sorting posts) to GPS (finding the best route). Choosing the right tools ensures smooth-running software that tackles problems effectively. </h3>
+                    <form action="/button_ds" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+                </div>
+                <div class="cg">
+                    <span class="material-icons-sharp">dns</span>
+                    <h2>SQL</h2>
+                    <br>
+                    <h3>
+                        SQL, the king of database languages, lets you manage information in relational databases.  Think of it as a powerful tool to store, retrieve, and manipulate data.  SQL allows you to create databases, tables, and efficiently query them to find specific information.  It's also used to update, delete, and manage user access to the data. From business intelligence to web applications, SQL is essential for working with large datasets. 
+                    </h3>
+                    <form action="/button_sql" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+                </div>
+                <div class="net">
+                    <span class="material-icons-sharp">C</span>
+                    <h2>C</h2>
+                    <br>
+                    <h3>C, a fundamental programming language, is known for its efficiency and direct access to hardware. This makes it ideal for system programming tasks.  C is widely used for building operating systems, device drivers, and embedded systems where performance is critical.  Additionally, C serves as the foundation for many popular languages like C++ and is a valuable tool for understanding computer science concepts. </h3>
+                    <form action="/button_c" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+                </div>
+                <div class="python">
+                    <span class="material-icons-sharp">code</span>
+                    <h2>Python</h2>
+                    <br>
+                    <h3>Python's versatility makes it a popular choice for many tasks.  It's commonly used for web development, handling the unseen engine behind websites.  Data science is another big area, where Python excels at analyzing and visualizing information.  Python even helps automate tasks, saving you time on repetitive processes.  Because it's beginner-friendly, it's also a favorite for learning to program. </h3>
+                    <form action="/button_python" method="post">
+                        <button type="submit" class="link"><h4>View Course</h4></button>
+                    </form>
+                </div>
+            </div>
+        <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
