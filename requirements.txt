@@ -60,4 +60,4 @@ wcwidth
 webencodings
 Werkzeug
 yarg
-pywin32
+pypiwin32
